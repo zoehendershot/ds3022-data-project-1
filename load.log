@@ -47,3 +47,35 @@
 2025-09-25 13:39:05,447 - INFO - Connected to DuckDB instance
 2025-09-25 13:39:50,786 - INFO - Finished loading all parquet files
 2025-09-25 13:39:50,791 - INFO - Database connection closed
+2025-09-25 22:35:38,140 - INFO - Connected to DuckDB instance
+2025-09-25 22:36:06,139 - INFO - Finished loading all parquet files
+2025-09-25 22:36:06,140 - INFO - Database connection closed
+2025-09-25 22:39:54,886 - INFO - Connected to DuckDB instance
+2025-09-25 22:39:55,742 - ERROR - An error occurred: HTTP Error: HTTP GET error on 'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet' (HTTP 403)
+2025-09-25 22:39:55,743 - INFO - Database connection closed
+2025-09-25 22:40:52,443 - INFO - Connected to DuckDB instance
+2025-09-25 22:40:53,395 - ERROR - An error occurred: HTTP Error: HTTP GET error on 'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet' (HTTP 403)
+2025-09-25 22:40:53,396 - INFO - Database connection closed
+2025-09-25 22:42:59,746 - INFO - Connected to DuckDB instance
+2025-09-25 22:43:25,361 - INFO - Finished loading all parquet files
+2025-09-25 22:43:25,361 - INFO - Database connection closed
+2025-09-25 22:44:34,566 - INFO - Connected to DuckDB instance
+2025-09-25 22:44:35,449 - ERROR - An error occurred: HTTP Error: HTTP GET error on 'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet' (HTTP 403)
+2025-09-25 22:44:35,449 - INFO - Database connection closed
+2025-09-25 22:45:21,444 - INFO - Connected to DuckDB instance
+2025-09-25 22:45:22,285 - ERROR - An error occurred: HTTP Error: HTTP GET error on 'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet' (HTTP 403)
+2025-09-25 22:45:22,285 - INFO - Database connection closed
+2025-09-25 22:48:20,312 - INFO - Connected to DuckDB instance
+2025-09-25 22:48:40,975 - INFO - Finished loading all parquet files
+2025-09-25 22:48:40,982 - INFO - Database connection closed
+2025-09-25 22:48:42,584 - INFO - NumExpr defaulting to 8 threads.
+2025-09-25 22:48:43,016 - INFO - Yellow table summary:
+ row_count  avg_passenger_count  avg_trip_distance min_pickup_datetime max_dropoff_datetime
+  41169720             1.333931           4.976101 2002-12-31 16:46:07  2026-06-27 20:59:10
+2025-09-25 22:51:31,430 - INFO - Connected to DuckDB instance
+2025-09-25 22:51:32,291 - ERROR - An error occurred: HTTP Error: HTTP GET error on 'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet' (HTTP 403)
+2025-09-25 22:51:32,291 - INFO - Database connection closed
+2025-09-25 22:52:02,846 - INFO - Connected to DuckDB instance
+2025-09-25 22:52:03,739 - ERROR - An error occurred: HTTP Error: HTTP GET error on 'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet' (HTTP 403)
+2025-09-25 22:52:03,739 - INFO - Database connection closed
+2025-09-25 22:53:38,388 - INFO - Connected to DuckDB instance

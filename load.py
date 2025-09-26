@@ -16,7 +16,7 @@ base_url = "https://d37ci6vzurychx.cloudfront.net/trip-data"
 year = 2024
 urls = []
 yellow_urls = [f"{base_url}/yellow_tripdata_2024-{m:02d}.parquet" for m in range(1, 13)]
-
+green_urls = [f"{base_url}/green_tripdata_2024-{m:02d}.parquet" for m in range(1, 13)]
 
 def load_parquet_files():
 
@@ -65,6 +65,40 @@ try:
     print(f"Table 'yellow': {count} rows")
 except duckdb.CatalogException:
     print("Table 'yellow' does not exist in the database.")
+
+print("Starting summarization…")
+def summarize_table(table_name):
+    """return summary statistics for a given table"""
+    query = f"""
+    SELECT
+        COUNT(*) AS row_count,
+        AVG(passenger_count) AS avg_passenger_count,
+        AVG(trip_distance) AS avg_trip_distance,
+        MIN(tpep_pickup_datetime) AS min_pickup_datetime,
+        MAX(tpep_dropoff_datetime) AS max_dropoff_datetime
+    FROM {table_name}
+    """
+    return con.execute(query).fetchdf()
+
+# Get summary statistics for 'yellow' table
+try:
+    summary_yellow = summarize_table("yellow")
+    print("Summary statistics for 'yellow' table:")
+    print(summary_yellow)
+except duckdb.CatalogException:
+    print("Table 'yellow' does not exist in the database.")
+
+# Get summary statistics for 'green' table
+#try:
+    #summary_green = summarize_table("green")
+    #print("Summary statistics for 'green' table:")
+    #print(summary_green)
+#except duckdb.CatalogException:
+    #print("Table 'green' does not exist in the database.")
+
+logger.info("Yellow table summary:\n%s", summary_yellow.to_string(index=False))
+#logger.info("Green table summary:\n%s", summary_green.to_string(index=False))
+
 
 # Close connection
 con.close()
