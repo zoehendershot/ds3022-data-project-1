@@ -1,0 +1,16 @@
+# DuckDB database file
+*.duckdb
+
+# Parquet trip data
+*.parquet
+
+# Logs
+*.log
+
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# OS/system files
+.DS_Store
